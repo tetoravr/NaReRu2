@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 0,
+	"VersionName": "1.4",
+	"FriendlyName": "Spectator Control Window",
+	"Description": "Create Spectator control window for UMG",
+	"Category": "Virtual Reality",
+	"CreatedBy": "dfab VR",
+	"CreatedByURL": "http://www.dfab.nl",
+	"DocsURL": "",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/d20e4808cb114d6e97474583d24615b4",
+	"SupportURL": "",
+	"EngineVersion": "4.26.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SpectatorControlWindow",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}

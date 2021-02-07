@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.4",
+	"FriendlyName": "SystemAudioVolume",
+	"Description": "Control audio device in the system",
+	"Category": "Audio",
+	"CreatedBy": "Andrew Bindraw",
+	"CreatedByURL": "https://github.com/mrbindraw",
+	"DocsURL": "https://docs.google.com/document/d/1EE5OxaNxSO46VcnjWKlnbTjtssFRkBYMvU8s3zzqh1w/edit?usp=sharing",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/7be22a53a22842db9cfc195524a6f080",
+	"SupportURL": "mailto:mrbindraw@gmail.com",
+	"EngineVersion": "4.26.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SystemAudioVolume",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}
