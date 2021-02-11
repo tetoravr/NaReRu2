@@ -7,7 +7,10 @@
 		{
 			"Name": "NaReRu2",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -33,6 +36,14 @@
 		},
 		{
 			"Name": "MultiUserClient",
+			"Enabled": true
+		},
+		{
+			"Name": "WebBrowserWidget",
+			"Enabled": true
+		},
+		{
+			"Name": "PanoramicCapture",
 			"Enabled": true
 		}
 	]
