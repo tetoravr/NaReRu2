@@ -35,7 +35,7 @@ void AUsageHistory::Test_History(FString patientid, FString username) {
 	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), JsonWriter);
 
 	//Http
-	TSharedRef<IHttpRequest> Request = Http->CreateRequest();
+	TSharedRef<IHttpRequest , ESPMode::ThreadSafe> Request = Http->CreateRequest();
 	Request->OnProcessRequestComplete().BindUObject(this, &AUsageHistory::OnResponseReceived);
 	Request->SetURL("https://virtual-reality-exposure-system.com/test/test5.php");//Œã‚Å•ÏX
 	Request->SetVerb("POST");

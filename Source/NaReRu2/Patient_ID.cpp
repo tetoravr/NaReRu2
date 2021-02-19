@@ -35,7 +35,7 @@ void APatient_ID::GenerateID(FString username)
 	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), JsonWriter);
 
 	//Http
-	TSharedRef<IHttpRequest> Request = Http->CreateRequest();
+	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest();
 	Request->OnProcessRequestComplete().BindUObject(this, &APatient_ID::OnResponseReceived);
 	Request->SetURL("https://virtual-reality-exposure-system.com/test/test_patient2.php");//Œã‚Å•ÏX
 	Request->SetVerb("POST");

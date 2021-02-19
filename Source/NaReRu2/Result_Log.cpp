@@ -43,7 +43,7 @@ void AResult_Log::SendResult_Log(FString username, FString patient_id, FString c
 	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), JsonWriter);
 
 	//Http
-	TSharedRef<IHttpRequest> Request = Http->CreateRequest();
+	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest();
 	Request->OnProcessRequestComplete().BindUObject(this, &AResult_Log::OnResponseReceived);
 	Request->SetURL("https://virtual-reality-exposure-system.com/Release/Result/Result.php");//Œã‚Å•ÏX
 	Request->SetVerb("POST");
